@@ -96,6 +96,13 @@ pipeline {
             echo 'Build is unstable — check test results.'
         }
 
+        always {
+            cleanWs()
+        }
+    }
+}
+ 
+
 
 
 
