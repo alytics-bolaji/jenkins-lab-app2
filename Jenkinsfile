@@ -33,6 +33,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running tests...'
+                sh 'chmod +x test.sh'
                 sh './test.sh'
             }
         }
