@@ -35,6 +35,7 @@ pipeline {
                 stage('Unit Tests') {
                     steps {
                         echo 'Running unit tests...'
+                        sh 'chmod +x test.sh'
                         sh './test.sh'
                     }
                 }
